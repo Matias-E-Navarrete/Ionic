@@ -4,5 +4,6 @@
     <app-post
         *ngFor="let mensaje of mensajes | async"
         [mensaje]="mensaje"
+        (clickPost)= "clickPost( $event )"
     ></app-post>
 </ul>

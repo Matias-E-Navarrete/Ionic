@@ -20,8 +20,12 @@ export class PostsComponent implements OnInit {
     .subscribe( (posts: any[]) => {
       this.mensajes = posts;
     });
-     */
+    */
 
+  }
+
+  clickPost( id_post: number ){
+    console.log('Click en: ' , id_post);
   }
 
 }
