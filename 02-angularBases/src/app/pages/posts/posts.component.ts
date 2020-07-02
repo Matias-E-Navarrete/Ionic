@@ -16,9 +16,7 @@ export class PostsComponent implements OnInit {
 
     this.mensajes = this.dataService.getData();
 
-    /* 
-    Genera basura cada vez que se ejecuta porque al hacer el 
-    ngOnInit genera un nuevo observable.
+    /* Genera basura cada vez que se ejecuta porque al hacer el ngOnInit genera un nuevo observable.
     .subscribe( (posts: any[]) => {
       this.mensajes = posts;
     });
